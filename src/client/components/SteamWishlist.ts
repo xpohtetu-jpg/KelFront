@@ -3,7 +3,13 @@ import { customElement, property, query, state } from "lit/decorators.js";
 import { steamSDK } from "../SteamSDK";
 import { translateText } from "../Utils";
 
-const STEAM_APP_ID = "3560670";
+// KelFront's Steam app ID. Empty until KelFront has its own store page; the
+// Steam widgets render nothing while it is unset.
+const STEAM_APP_ID = "";
+
+export function hasSteamListing(): boolean {
+  return STEAM_APP_ID !== "";
+}
 
 /** Nominal size of Steam's store widget, as published in its embed snippet. */
 const WIDGET_WIDTH = 646;
@@ -19,7 +25,7 @@ const WIDGET_HEIGHT = 190;
 const WIDGET_MIN_WIDTH = 501;
 
 /**
- * Steam's store widget for OpenFront.
+ * Steam's store widget for KelFront.
  *
  * UTM parameters are forwarded by Steam into every link the widget renders
  * (store page, "Wishlist on Steam" button), so `campaign` is what shows up in
@@ -32,14 +38,14 @@ export function steamWidgetUrl(campaign: string): string {
   return steamUrl(`widget/${STEAM_APP_ID}/`, "widget", campaign);
 }
 
-/** Store page for OpenFront, tagged for the same UTM dashboard. */
+/** Store page for KelFront, tagged for the same UTM dashboard. */
 export function steamStoreUrl(campaign: string): string {
-  return steamUrl(`app/${STEAM_APP_ID}/OpenFront/`, "link", campaign);
+  return steamUrl(`app/${STEAM_APP_ID}/KelFront/`, "link", campaign);
 }
 
 function steamUrl(path: string, medium: string, campaign: string): string {
   const params = new URLSearchParams({
-    utm_source: "openfront",
+    utm_source: "kelfront",
     utm_medium: medium,
     utm_campaign: campaign,
   });
@@ -85,8 +91,9 @@ export class SteamWishlist extends LitElement {
   }
 
   protected updated() {
-    if (this.frame === undefined) {
-      // Hidden on Steam — nothing rendered to measure.
+    if (!this.frame) {
+      // Hidden (on Steam, or no Steam listing) — nothing rendered to measure.
+      // @query yields null, not undefined, when the element is absent.
       this.resizeObserver?.disconnect();
       this.resizeObserver = undefined;
       return;
@@ -103,7 +110,7 @@ export class SteamWishlist extends LitElement {
   }
 
   render() {
-    if (steamSDK.isOnSteam()) return nothing;
+    if (!hasSteamListing() || steamSDK.isOnSteam()) return nothing;
 
     const frameWidth = Math.min(
       WIDGET_WIDTH,

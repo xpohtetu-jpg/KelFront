@@ -32,7 +32,7 @@
     "desktop_login_discord": "Mit Discord in deinem Browser fortfahren",
     "desktop_login_google": "Mit Google im Browser fortfahren",
     "desktop_login_needs_update": "Die Anmeldung benötigt eine neuere Version der Desktop-App. Starte Steam neu, um zu aktualisieren, dann versuche es erneut.",
-    "desktop_sign_in_desc": "Die Anmeldung öffnet die OpenFront‑Website in deinem Browser. Melde dich dort an, bestätige die Verknüpfung mit deinem Steam‑Account, und das Spiel übernimmt sie automatisch.",
+    "desktop_sign_in_desc": "Die Anmeldung öffnet die KelFront‑Website in deinem Browser. Melde dich dort an, bestätige die Verknüpfung mit deinem Steam‑Account, und das Spiel übernimmt sie automatisch.",
     "email_placeholder": "E-Mail-Adresse eingeben",
     "enter_email_address": "Bitte gib deine E-Mail-Adresse ein",
     "failed_to_send_recovery_email": "Senden der Wiederherstellungs E-Mail ist fehlgeschlagen",
@@ -50,7 +50,7 @@
     "link_google_already_linked": "Dieses Google-Konto ist bereits mit einem anderen Spieler verknüpft.",
     "link_google_error": "Dein Google-Konto konnte nicht verknüpft werden. Bitte stelle sicher, dass du angemeldet bist und versuche es erneut.",
     "link_google_failed": "Google-Link konnte nicht gestartet werden. Bitte versuche es erneut.",
-    "link_google_on_web": "Google auf der OpenFront-Website verknüpfen",
+    "link_google_on_web": "Google auf der KelFront-Website verknüpfen",
     "link_google_success": "Google-Konto wurde verknüpft.",
     "link_steam": "Steam Konto verknüpfen",
     "link_steam_error": "Konnte deinen Steam‑Account nicht verknüpfen. Bitte stelle sicher, dass du angemeldet bist und versuche es erneut.",
@@ -64,13 +64,13 @@
     "login_deleted": "Dieses Konto wurde bereits gelöscht.",
     "login_email_exists": "Du hast bereits ein Konto mit dieser E-Mail-Adresse. Melde dich dort an und verknüpfe dieses Konto anschließend in den Einstellungen.",
     "login_error": "Wir konnten diese Anmeldung nicht verifizieren. Bitte versuche es erneut.",
-    "login_no_account": "Noch kein OpenFront‑Account verwendet diesen Steam‑Account. Melde dich mit deinem bestehenden Account an und verknüpfe Steam in den Einstellungen, oder starte das Spiel über Steam.",
+    "login_no_account": "Noch kein KelFront‑Account verwendet diesen Steam‑Account. Melde dich mit deinem bestehenden Account an und verknüpfe Steam in den Einstellungen, oder starte das Spiel über Steam.",
     "manage_subscription": "Verwalten",
     "manage_subscription_on_steam": "Über Steam abgerechnet. ‚Verwalten öffnet deine Steam‑Abonnementseite.",
     "manage_subscription_on_steam_ending": "Gekündigt — aktiv bis {date}. ‚Verwalten‘ öffnet deine Steam‑Abonnementseite.",
     "manage_subscription_on_steam_ending_no_date": "Gekündigt — bleibt bis zum Ende des bezahlten Zeitraums aktiv. ‚Verwalten‘ öffnet die Steam‑Seite für deine Abonnements.",
     "manage_subscription_on_steam_no_tier_change": "Über Steam abgerechnet. Verwalten öffnet die Steam‑Seite für deine Abonnements. Zum Wechseln der Stufe musst du kündigen und nach Ablauf des aktuellen Monats die neue Stufe abonnieren.",
-    "manage_subscription_on_web": "Die Abrechnung kannst du auf der OpenFront‑Website verwalten oder ändern.",
+    "manage_subscription_on_web": "Die Abrechnung kannst du auf der KelFront‑Website verwalten oder ändern.",
     "marketing_desc": "Gelegentliche Nachrichten, Events und Spielaktualisierungen. Abmelden jederzeit möglich.",
     "marketing_no_email": "Verknüpfe eine E-Mail mit deinem Konto, um Updates zu abonnieren.",
     "marketing_no_email_steam": "Steam teilt uns deine E‑Mail‑Adresse nicht mit, daher haben wir keine Möglichkeit, dir Updates zu schicken.",
@@ -577,8 +577,8 @@
     "spectating": "Zuschauen"
   },
   "desktop_session": {
-    "generic": "Anmeldung zu deinem OpenFront-Konto fehlgeschlagen",
-    "network": "Konnte OpenFront nicht erreichen. Überprüfe deine Verbindung.",
+    "generic": "Anmeldung zu deinem KelFront-Konto fehlgeschlagen",
+    "network": "Konnte KelFront nicht erreichen. Überprüfe deine Verbindung.",
     "retry": "Wiederholen",
     "retrying": "Einloggen…",
     "steam_backend": "Steam hat Probleme dich anzumelden. Versuche es in Kürze erneut.",
@@ -903,7 +903,7 @@
     "preset_colorblind_desc": "Farbenblindfreundliche Flächen und Randfarben verwenden",
     "preset_custom": "Benutzerdefiniert",
     "preset_default": "Standard",
-    "preset_default_desc": "Der Standard OpenFront-Look",
+    "preset_default_desc": "Der Standard KelFront-Look",
     "preset_delete_confirm": "Voreingestellten \"{name} \"löschen?",
     "preset_evans_pick": "Evan's Auswahl",
     "preset_evans_pick_desc": "Die Einstellungen, welche Evan tatsächlich nutzt",
@@ -1021,7 +1021,7 @@
     "radial_title": "Radialmenü",
     "table_action": "Aktion",
     "table_key": "Tastenkombination",
-    "troubleshooting_desc": "Wenn du Leistungsprobleme, Abstürze oder andere Probleme beim Spielen von OpenFront haben, besuche bitte unsere Seite zur Fehlerbehebung für die Diagnose und Behebung häufiger Probleme:",
+    "troubleshooting_desc": "Wenn du Leistungsprobleme, Abstürze oder andere Probleme beim Spielen von KelFront haben, besuche bitte unsere Seite zur Fehlerbehebung für die Diagnose und Behebung häufiger Probleme:",
     "ui_attack_ratio": "Angriffsverhältnis - Die Anzahl der Truppen, die beim Angriff verwendet werden, kann mit dem Schieberegler angepasst werden. Je mehr Truppen beim Angriff verwendet werden desto geringer sind die eigenen Verluste. Während weniger Truppen zu größeren Verlusten führen.\nDieser Effekt geht nicht über das Verhältnis von 2:1 hinaus.",
     "ui_control": "Aktionsmenü",
     "ui_control_desc": "Der Kontrollbereich beinhaltet folgende Elemente:",
@@ -1041,7 +1041,7 @@
     "ui_wilderness": "Wildnis",
     "ui_your_team": "Dein Team:",
     "video_tutorial": "Video-Tutorial",
-    "video_tutorial_title": "OpenFront.io Tutorial"
+    "video_tutorial_title": "KelFront Tutorial"
   },
   "host_modal": {
     "anonymous_players": "Anonymer Spieler",
@@ -1113,14 +1113,14 @@
     "got_it": "Verstanden",
     "how": "Wie",
     "later": "Später",
-    "modal_desc": "Ihr Browser unterstützt keinen Vollbild, aber Sie können OpenFront zu Ihrem Startbildschirm hinzufügen, um ein intensives Erlebnis zu erleben:",
+    "modal_desc": "Ihr Browser unterstützt keinen Vollbild, aber Sie können KelFront zu Ihrem Startbildschirm hinzufügen, um ein intensives Erlebnis zu erleben:",
     "modal_title": "Vollbild auf iOS",
     "never": "Niemals",
     "step_add_to_home_label": "Zum Startbildschirm hinzufügen",
     "step_open": "Direkt vom Home‑Screen öffnen — läuft im Vollbild ohne Adressleiste",
     "step_scroll_and_tap": "Herunterscrollen und tippen",
     "step_share": "Klicke die „Teilen” Taste in deinem Browser",
-    "text": "Für Vollbild OpenFront zum Startbildschirm hinzufügen"
+    "text": "Für Vollbild KelFront zum Startbildschirm hinzufügen"
   },
   "kick_reason": {
     "admin": "Von einem Admin gekickt",
@@ -1214,7 +1214,7 @@
     "solo": "Solo",
     "store": "Shop",
     "terms_of_service": "Nutzungsbedingungen",
-    "title": "OpenFront (ALPHA)",
+    "title": "KelFront (ALPHA)",
     "troubleshooting": "Fehlerbehebung",
     "tutorial": "Tutorial",
     "user_avatar_alt": "{username}'s Avatar",
@@ -1385,7 +1385,7 @@
     "dismiss": "Schließen",
     "error": "Speichern fehlgeschlagen. Bitte erneut versuchen.",
     "no": "Nein danke",
-    "title": "Mit OpenFront weitermachen?",
+    "title": "Mit KelFront weitermachen?",
     "yes": "Ja bitte"
   },
   "matchmaking_modal": {
@@ -1445,7 +1445,7 @@
   },
   "news_box": {
     "dismiss": "Verwerfen",
-    "firefox_warning": "OpenFront.io funktioniert nicht gut mit [Firefox-basierten Browsern](https://simple.wikipedia.org/wiki/Web_browsers_based_on_Firefox). Wir empfehlen dir einen [Chromium-basierten Browser](https://en.wikipedia.org/wiki/Chromium_(web_browser)#Browsers_based_on_Chromium) für beste Leistung zu verwenden.",
+    "firefox_warning": "KelFront funktioniert nicht gut mit [Firefox-basierten Browsern](https://simple.wikipedia.org/wiki/Web_browsers_based_on_Firefox). Wir empfehlen dir einen [Chromium-basierten Browser](https://en.wikipedia.org/wiki/Chromium_(web_browser)#Browsers_based_on_Chromium) für beste Leistung zu verwenden.",
     "go_to_item": "Gehe zu Artikel {num}",
     "news": "Neuigkeiten",
     "tournament": "TURNIERE",
@@ -1682,9 +1682,9 @@
     "waiting_for_players": "Warte auf Spieler"
   },
   "purchase_nudge": {
-    "body": "Es scheint, als würde dir OpenFront Spaß machen! Bitte überlege, uns zu helfen, indem du einen Einkauf tätigst — jeder Einkauf entfernt alle Werbung für dich, für immer.",
+    "body": "Es scheint, als würde dir KelFront Spaß machen! Bitte überlege, uns zu helfen, indem du einen Einkauf tätigst — jeder Einkauf entfernt alle Werbung für dich, für immer.",
     "close": "Schließen",
-    "title": "Gefällt dir OpenFront?",
+    "title": "Gefällt dir KelFront?",
     "visit_store": "Zum Shop"
   },
   "radial_menu": {
@@ -1757,9 +1757,9 @@
   },
   "steam_wishlist": {
     "cta": "Jetzt zur Wunschliste hinzufügen",
-    "on_steam": "OpenFront auf Steam",
+    "on_steam": "KelFront auf Steam",
     "release": "Verfügbares 3. Quartal 2026",
-    "title": "Wunschliste OpenFront auf Steam!"
+    "title": "Wunschliste KelFront auf Steam!"
   },
   "store": {
     "already_owned": "Du besitzt diesen Gegenstand bereits. Es wurde nichts berechnet.",
@@ -1833,7 +1833,7 @@
     "subscription_purchase_success": "Abonnement aktiviert!",
     "subscriptions": "Abonnements",
     "switch_button": "Wechseln",
-    "tier_change_steam_needs_desktop": "Dein Abonnement wird über Steam abgerechnet. Ändere es in der OpenFront‑App auf Steam oder verwalte es in den Einstellungen deines Steam‑Kontos.",
+    "tier_change_steam_needs_desktop": "Dein Abonnement wird über Steam abgerechnet. Ändere es in der KelFront‑App auf Steam oder verwalte es in den Einstellungen deines Steam‑Kontos.",
     "tier_change_unavailable_steam": "Um auf Steam das Tier zu wechseln, kündige dein Abonnement in den Einstellungen deines Steam‑Kontos und abonniere das neue Tier, nachdem dein aktueller Monat endet.",
     "title": "Shop",
     "tribe_boost_button": "Boost",
@@ -1910,7 +1910,7 @@
     "browser": "Browser",
     "canvas_2d_no_gpu": "2D-Leinwand (keine GPU)",
     "charging": "Wird geladen",
-    "chromium_tip": "OpenFront läuft am besten auf Chromium-basierten Browsern.",
+    "chromium_tip": "KelFront läuft am besten auf Chromium-basierten Browsern.",
     "copied_to_clipboard": "Informationen in die Zwischenablage kopiert! Du kannst sie auf unserem Discord teilen, wenn du Hilfe brauchst.",
     "device_pixel_ratio": "Pixelverhältnis des Geräts",
     "environment": "Umgebung",
@@ -2001,8 +2001,8 @@
     "warship": "Kriegsschiff"
   },
   "update_available": {
-    "desktop": "Eine neue Version von OpenFront ist verfügbar. Sie wird im Hintergrund heruntergeladen; lade über die Update‑Leiste neu, sobald sie bereit ist.",
-    "message": "Eine neue Version von OpenFront ist verfügbar. Die Seite wird nun aktualisiert."
+    "desktop": "Eine neue Version von KelFront ist verfügbar. Sie wird im Hintergrund heruntergeladen; lade über die Update‑Leiste neu, sobald sie bereit ist.",
+    "message": "Eine neue Version von KelFront ist verfügbar. Die Seite wird nun aktualisiert."
   },
   "user_setting": {
     "alert_frame_desc": "Aktiviere oder deaktiviere den Alarmrahmen. Wenn aktiviert, wird der Rahmen angezeigt, wenn du verraten wirst oder einen Landangriff erleidest.",
@@ -2160,7 +2160,7 @@
     "zoom_in_desc": "Karte vergrößern",
     "zoom_out": "Verkleinern",
     "zoom_out_desc": "Karte verkleinern",
-    "quit_desc": "Schließe OpenFront und kehre zu deinem Desktop zurück.",
+    "quit_desc": "Schließe KelFront und kehre zu deinem Desktop zurück.",
     "quit_label": "Spiel verlassen"
   },
   "username": {
@@ -2211,7 +2211,7 @@
     "other_won": "{player} hat gewonnen!",
     "requeue": "Spiel nochmal",
     "spectate": "Zuschauen",
-    "support_openfront": "Unterstütze OpenFront!",
+    "support_openfront": "Unterstütze KelFront!",
     "territory_pattern": "Kaufe ein Gebietsmuster, um werbefrei zu spielen!",
     "you_won": "Du hast gewonnen!",
     "your_team": "Dein Team hat gewonnen!",

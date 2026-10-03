@@ -1,18 +1,22 @@
 <p align="center">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="proprietary/images/OpenFrontLogoDark.svg">
-    <source media="(prefers-color-scheme: light)" srcset="proprietary/images/OpenFrontLogo.svg">
-    <img src="proprietary/images/OpenFrontLogo.svg" alt="OpenFrontIO Logo" width="300">
+    <source media="(prefers-color-scheme: dark)" srcset="proprietary/images/KelFrontLogo.svg">
+    <source media="(prefers-color-scheme: light)" srcset="proprietary/images/KelFrontLogoDark.svg">
+    <img src="proprietary/images/KelFrontLogoDark.svg" alt="KelFront Logo" width="300">
   </picture>
 </p>
 
-[OpenFront.io](https://openfront.io/) is an online real-time strategy game focused on territorial control and alliance building. Players compete to expand their territory, build structures, and form strategic alliances in various maps based on real-world geography.
+KelFront is an online real-time strategy game focused on territorial control and alliance building. Players compete to expand their territory, build structures, and form strategic alliances in various maps based on real-world geography.
 
-This is a fork/rewrite of WarFront.io. Credit to https://github.com/WarFrontIO.
+**KelFront is a fork of [OpenFront](https://github.com/openfrontio/OpenFrontIO)** and is not affiliated with or endorsed by OpenFront Inc. OpenFront is itself a fork/rewrite of WarFront.io. Credit to https://github.com/WarFrontIO.
 
-![CI](https://github.com/openfrontio/OpenFrontIO/actions/workflows/ci.yml/badge.svg)
-[![Crowdin](https://badges.crowdin.net/openfront-mls/localized.svg)](https://crowdin.com/project/openfront-mls)
-[![CLA assistant](https://cla-assistant.io/readme/badge/openfrontio/OpenFrontIO)](https://cla-assistant.io/openfrontio/OpenFrontIO)
+### What differs from upstream OpenFront
+
+- Name and branding are KelFront. The required "© OpenFront and Contributors" notice is kept in the footer and loading screen.
+- OpenFront's All-Rights-Reserved `proprietary/` assets (logo, favicon, title font, music, game-start sound) are **not** included. `proprietary/` now holds KelFront's own assets; see [proprietary/LICENSE](proprietary/LICENSE). Regenerate them with `node scripts/generateBrandAssets.mjs` and `node scripts/generateAudio.mjs`.
+- OpenFront's ad, analytics, and Apple Pay account bindings, its press kit, and its Terms/Privacy documents are removed.
+- The account/stats/cosmetics API is closed-source and not part of this repo, so login, stats, and the store are unavailable unless you run your own API.
+
 [![License: AGPL v3](https://img.shields.io/badge/License-AGPL%20v3-blue.svg)](https://www.gnu.org/licenses/agpl-3.0)
 [![Assets: CC BY-SA 4.0](https://img.shields.io/badge/Assets-CC%20BY--SA%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by-sa/4.0/)
 

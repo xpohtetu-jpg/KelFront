@@ -498,8 +498,8 @@
     "spectating": "Assistindo"
   },
   "desktop_session": {
-    "generic": "Não foi possível fazer o login em sua conta OpenFront",
-    "network": "Não foi possível acessar OpenFront. Verifique sua conexão.",
+    "generic": "Não foi possível fazer o login em sua conta KelFront",
+    "network": "Não foi possível acessar KelFront. Verifique sua conexão.",
     "retry": "Tente novamente",
     "retrying": "Fazendo o login…",
     "steam_backend": "O Steam está tendo problemas para conectá-lo. Tente novamente em breve.",
@@ -825,7 +825,7 @@
     "preset_colorblind_desc": "Usar cores de borda e territórios para pessoas daltônicas",
     "preset_custom": "Customizado",
     "preset_default": "Padrão",
-    "preset_default_desc": "A aparência padrão do OpenFront",
+    "preset_default_desc": "A aparência padrão do KelFront",
     "preset_delete_confirm": "Excluir predefinição \"{name}\"?",
     "preset_evans_pick": "Escolha de Evan",
     "preset_evans_pick_desc": "As configurações com que Evan realmente joga com",
@@ -963,7 +963,7 @@
     "ui_wilderness": "Terra inóspita",
     "ui_your_team": "Seu Time:",
     "video_tutorial": "Vídeo tutorial",
-    "video_tutorial_title": "OpenFront.io Tutorial"
+    "video_tutorial_title": "KelFront Tutorial"
   },
   "host_modal": {
     "anonymous_players": "Jogadores Anônimos",
@@ -1035,14 +1035,14 @@
     "got_it": "Consegui",
     "how": "Como",
     "later": "Depois",
-    "modal_desc": "Seu navegador não suporta tela cheia, mas você pode adicionar OpenFront à sua Tela Inicial para uma experiência imersiva:",
+    "modal_desc": "Seu navegador não suporta tela cheia, mas você pode adicionar KelFront à sua Tela Inicial para uma experiência imersiva:",
     "modal_title": "Tela cheia no iOS",
     "never": "Nunca",
     "step_add_to_home_label": "Colocar na Tela de início",
     "step_open": "Abrir a partir da sua Tela Inicial — abre tela cheia sem barra de endereços",
     "step_scroll_and_tap": "Role para baixo e toque",
     "step_share": "Toque no botão Compartilhar no seu navegador",
-    "text": "Para tela cheia, adicione o OpenFront à sua tela inicial"
+    "text": "Para tela cheia, adicione o KelFront à sua tela inicial"
   },
   "kick_reason": {
     "admin": "Expulso por um administrador",
@@ -1134,7 +1134,7 @@
     "solo": "Solo",
     "store": "Loja",
     "terms_of_service": "Termos de Serviço",
-    "title": "OpenFront (ALFA)",
+    "title": "KelFront (ALFA)",
     "troubleshooting": "Solução de problemas",
     "user_avatar_alt": "Avatar de {username}",
     "wiki": "Wiki",
@@ -1300,7 +1300,7 @@
     "dismiss": "Ignorar",
     "error": "Não foi possível salvar isso. Por favor, tente novamente.",
     "no": "Não, obrigado",
-    "title": "Continuar com o OpenFront?",
+    "title": "Continuar com o KelFront?",
     "yes": "Sim, por favor"
   },
   "matchmaking_modal": {
@@ -1360,7 +1360,7 @@
   },
   "news_box": {
     "dismiss": "Ignorar",
-    "firefox_warning": "O OpenFront.io não performa bem com navegadores baseados em Firefox\n(https://simple.wikipedia.org/wiki/Web_browsers_based_on_Firefox). Recomendamos que você utilize um navegador baseado no Chromium\n(https://en.wikipedia.org/wiki/Chromium_(web_browser)#Browsers_based_on_Chromium) para um melhor desempenho.",
+    "firefox_warning": "O KelFront não performa bem com navegadores baseados em Firefox\n(https://simple.wikipedia.org/wiki/Web_browsers_based_on_Firefox). Recomendamos que você utilize um navegador baseado no Chromium\n(https://en.wikipedia.org/wiki/Chromium_(web_browser)#Browsers_based_on_Chromium) para um melhor desempenho.",
     "go_to_item": "Ir para o item {num}",
     "news": "NOTÍCIAS",
     "tournament": "TORNEIO",
@@ -1591,9 +1591,9 @@
     "waiting_for_players": "Aguardando jogadores"
   },
   "purchase_nudge": {
-    "body": "Parece que você gosta de jogar OpenFront! Por favor, considere apoiar-nos fazendo uma compra — qualquer compra torna você livre de anúncios para toda a vida.",
+    "body": "Parece que você gosta de jogar KelFront! Por favor, considere apoiar-nos fazendo uma compra — qualquer compra torna você livre de anúncios para toda a vida.",
     "close": "Fechar",
-    "title": "Curtindo o OpenFront?",
+    "title": "Curtindo o KelFront?",
     "visit_store": "Visite a loja"
   },
   "radial_menu": {
@@ -1656,7 +1656,7 @@
     "reason_expired": "Este link expirou. Por favor, tente novamente a partir da Steam.",
     "reason_rate_limited": "Muitas tentativas. Por favor, espere {seconds, plural, =0 {} one {# segundo} other {# segundos}} e tente novamente.",
     "reason_steam_has_progress": "Esta conta Steam já tem seu próprio progresso e não pode ser mesclada.",
-    "reason_steam_linked_elsewhere": "Esta conta Steam já está vinculada a uma conta OpenFront diferente.",
+    "reason_steam_linked_elsewhere": "Esta conta Steam já está vinculada a uma conta KelFront diferente.",
     "success": "Sua conta Steam agora está vinculada.",
     "title": "Vincular conta Steam"
   },
@@ -1666,9 +1666,9 @@
   },
   "steam_wishlist": {
     "cta": "Adicione à lista de desejos",
-    "on_steam": "OpenFront Na Steam",
+    "on_steam": "KelFront Na Steam",
     "release": "Disponível em Q3 2026",
-    "title": "Coloque o OpenFront na Lista de Desejo na Steam!"
+    "title": "Coloque o KelFront na Lista de Desejo na Steam!"
   },
   "store": {
     "already_subscribed": "Já inscrito.",
@@ -1756,7 +1756,7 @@
     "tribes_purchase_heading": "Compre um nome de tribo",
     "your_tribes_heading": "Seus Nomes de Tribo",
     "merch": "Produtos",
-    "merch_blurb": "Obtenha os produtos da OpenFront enviado para a sua porta!",
+    "merch_blurb": "Obtenha os produtos da KelFront enviado para a sua porta!",
     "merch_visit_store": "Visitar Loja"
   },
   "streaming_now": {
@@ -1798,7 +1798,7 @@
     "browser": "Navegador",
     "canvas_2d_no_gpu": "Canvas 2D (sem GPU)",
     "charging": "Carregando",
-    "chromium_tip": "O OpenFront funciona melhor nos navegadores baseados no Chromium.",
+    "chromium_tip": "O KelFront funciona melhor nos navegadores baseados no Chromium.",
     "copied_to_clipboard": "Informação copiada para a área de transferência! Sinta-se à vontade para compartilhá-la em nosso Discord se precisar de ajuda.",
     "device_pixel_ratio": "Proporção de Pixel do Dispositivo",
     "environment": "Ambiente",
@@ -2016,7 +2016,7 @@
     "other_won": "{player} Venceu!",
     "requeue": "Jogar Novamente",
     "spectate": "Assistir",
-    "support_openfront": "Suporte OpenFront!",
+    "support_openfront": "Suporte KelFront!",
     "territory_pattern": "Compre uma skin de território parar ficar sem propagandas!",
     "you_won": "Você Venceu!",
     "your_team": "Sua Equipe Venceu!",

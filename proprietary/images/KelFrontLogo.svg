@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1270 240" width="1270" height="240">
+  <title>KelFront</title>
+  <g transform="translate(0 8) scale(1)">
+    <clipPath id="kf-shield"><path d="M90 6L172 36V112C172 164 134 200 90 218C46 200 8 164 8 112V36Z"/></clipPath>
+    <path d="M90 6L172 36V112C172 164 134 200 90 218C46 200 8 164 8 112V36Z" fill="#F5A524"/>
+    <path d="M96 0L74 46L108 84L70 124L104 166L84 230L200 230L200 0Z" fill="#D7263D" clip-path="url(#kf-shield)"/>
+    <path d="M96 0L74 46L108 84L70 124L104 166L84 230" fill="none" stroke="#FFFFFF" stroke-width="12" stroke-linejoin="round" clip-path="url(#kf-shield)"/>
+    <path d="M90 6L172 36V112C172 164 134 200 90 218C46 200 8 164 8 112V36Z" fill="none" stroke="#14161C" stroke-width="10" stroke-linejoin="round"/>
+  </g>
+  <path fill="#F5A524" fill-rule="evenodd" d="M220 40h34v160h-34z"/><path fill="#F5A524" fill-rule="evenodd" d="M254 100L300 40L344 40L276 128L254 128z"/><path fill="#F5A524" fill-rule="evenodd" d="M270 104L344 200L300 200L254 140L254 118z"/><path fill="#F5A524" fill-rule="evenodd" d="M360 40h34v160h-34z"/><path fill="#F5A524" fill-rule="evenodd" d="M360 40h104v34h-104z"/><path fill="#F5A524" fill-rule="evenodd" d="M360 103h90v34h-90z"/><path fill="#F5A524" fill-rule="evenodd" d="M360 166h104v34h-104z"/><path fill="#F5A524" fill-rule="evenodd" d="M480 40h34v160h-34z"/><path fill="#F5A524" fill-rule="evenodd" d="M480 166h100v34h-100z"/>
+  <path fill="#FFFFFF" fill-rule="evenodd" d="M602 40h34v160h-34z"/><path fill="#FFFFFF" fill-rule="evenodd" d="M602 40h104v34h-104z"/><path fill="#FFFFFF" fill-rule="evenodd" d="M602 106h90v34h-90z"/><path fill="#FFFFFF" fill-rule="evenodd" d="M722 40h34v160h-34z"/><path fill="#FFFFFF" fill-rule="evenodd" d="M722 40H794A48 48 0 0 1 842 88A48 48 0 0 1 794 136H722zM756 72H792A16 16 0 0 1 808 88A16 16 0 0 1 792 104H756z"/><path fill="#FFFFFF" fill-rule="evenodd" d="M776 128L814 128L844 200L806 200z"/><path fill="#FFFFFF" fill-rule="evenodd" d="M910 40H940A50 50 0 0 1 990 90V150A50 50 0 0 1 940 200H910A50 50 0 0 1 860 150V90A50 50 0 0 1 910 40zM912 74H938A18 18 0 0 1 956 92V148A18 18 0 0 1 938 166H912A18 18 0 0 1 894 148V92A18 18 0 0 1 912 74z"/><path fill="#FFFFFF" fill-rule="evenodd" d="M1006 40h34v160h-34z"/><path fill="#FFFFFF" fill-rule="evenodd" d="M1096 40h34v160h-34z"/><path fill="#FFFFFF" fill-rule="evenodd" d="M1006 40L1046 40L1130 200L1090 200z"/><path fill="#FFFFFF" fill-rule="evenodd" d="M1146 40h116v34h-116z"/><path fill="#FFFFFF" fill-rule="evenodd" d="M1187 40h34v160h-34z"/>
+</svg>

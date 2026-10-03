@@ -59,8 +59,8 @@ export class PlayPage extends LitElement {
               class="col-start-2 flex items-center justify-center text-malibu-blue min-w-0"
             >
               <img
-                src=${assetUrl("images/OpenFrontLogo.svg")}
-                alt="OpenFront"
+                src=${assetUrl("images/KelFrontLogo.svg")}
+                alt="KelFront"
                 class="h-full w-auto"
               />
             </div>

@@ -498,8 +498,8 @@
     "spectating": "Sleduje hru"
   },
   "desktop_session": {
-    "generic": "K vašemu účtu OpenFront se nepodařilo přihlásit",
-    "network": "K OpenFront se nelze připojit. Zkontrolujte své připojení.",
+    "generic": "K vašemu účtu KelFront se nepodařilo přihlásit",
+    "network": "K KelFront se nelze připojit. Zkontrolujte své připojení.",
     "retry": "Zkusit znovu",
     "retrying": "Přihlašování…",
     "steam_backend": "Steamu se nedaří vás přihlásit. Zkuste to za chvíli znovu.",
@@ -825,7 +825,7 @@
     "preset_colorblind_desc": "Barvy území a hranic vhodné pro barvoslepé",
     "preset_custom": "Vlastní",
     "preset_default": "Výchozí",
-    "preset_default_desc": "Standardní vzhled OpenFront",
+    "preset_default_desc": "Standardní vzhled KelFront",
     "preset_delete_confirm": "Odstranit předvolbu \"{name}\"?",
     "preset_evans_pick": "Evanova volba",
     "preset_evans_pick_desc": "Nastavení, se kterým Evan skutečně hraje",
@@ -943,7 +943,7 @@
     "radial_title": "Kruhová nabídka",
     "table_action": "Akce",
     "table_key": "Klávesa",
-    "troubleshooting_desc": "Pokud při hraní OpenFront narazíte na problémy s výkonem, pády nebo jiné potíže, navštivte prosím naši stránku řešení potíží, která vám pomůže s diagnostikou a opravou běžných problémů:",
+    "troubleshooting_desc": "Pokud při hraní KelFront narazíte na problémy s výkonem, pády nebo jiné potíže, navštivte prosím naši stránku řešení potíží, která vám pomůže s diagnostikou a opravou běžných problémů:",
     "ui_attack_ratio": "Poměr útoku – množství jednotek použitých při útoku. Poměr útoku můžete upravit posuvníkem. Pokud máte více útočících jednotek než obránce, ztratíte při útoku méně jednotek. Pokud jich máte méně, vaše útočící jednotky utrpí větší poškození. Účinek nepřesahuje poměr 2:1.",
     "ui_control": "Ovládací panel",
     "ui_control_desc": "Ovládací panel obsahuje následující prvky:",
@@ -963,7 +963,7 @@
     "ui_wilderness": "Divočina",
     "ui_your_team": "Váš tým:",
     "video_tutorial": "Video návod",
-    "video_tutorial_title": "OpenFront.io Návod"
+    "video_tutorial_title": "KelFront Návod"
   },
   "host_modal": {
     "anonymous_players": "Anonymní hráči",
@@ -1035,14 +1035,14 @@
     "got_it": "Rozumím",
     "how": "Návod",
     "later": "Později",
-    "modal_desc": "Váš prohlížeč nepodporuje režim celé obrazovky. Pro lepší zážitek si ale můžete OpenFront přidat na plochu:",
+    "modal_desc": "Váš prohlížeč nepodporuje režim celé obrazovky. Pro lepší zážitek si ale můžete KelFront přidat na plochu:",
     "modal_title": "Celá obrazovka na iOS",
     "never": "Nikdy",
     "step_add_to_home_label": "Přidat na plochu",
     "step_open": "Otevřete z plochy – spustí se na celé obrazovce bez adresního řádku",
     "step_scroll_and_tap": "Sjeďte dolů a klepněte",
     "step_share": "Klepněte v prohlížeči na tlačítko Sdílet",
-    "text": "Pro režim celé obrazovky přidejte OpenFront na plochu"
+    "text": "Pro režim celé obrazovky přidejte KelFront na plochu"
   },
   "kick_reason": {
     "admin": "Vyhozen správcem",
@@ -1134,7 +1134,7 @@
     "solo": "Sólo",
     "store": "Obchod",
     "terms_of_service": "Podmínky používání",
-    "title": "OpenFront (ALPHA)",
+    "title": "KelFront (ALPHA)",
     "troubleshooting": "Řešení problémů",
     "user_avatar_alt": "Profilový obrázek uživatele {username}",
     "wiki": "Wiki",
@@ -1300,7 +1300,7 @@
     "dismiss": "Zavřít",
     "error": "Nastavení se nepodařilo uložit. Zkuste to znovu.",
     "no": "Ne, děkuji",
-    "title": "Chcete dostávat novinky z OpenFrontu?",
+    "title": "Chcete dostávat novinky z KelFrontu?",
     "yes": "Ano, prosím"
   },
   "matchmaking_modal": {
@@ -1360,7 +1360,7 @@
   },
   "news_box": {
     "dismiss": "Zavřít",
-    "firefox_warning": "OpenFront.io běží nejlépe v [prohlížečích založených na Chromiu](https://en.wikipedia.org/wiki/Chromium_(web_browser)#Browsers_based_on_Chromium). Výkon může být horší v [prohlížečích založených na Firefoxu](https://simple.wikipedia.org/wiki/Web_browsers_based_on_Firefox).",
+    "firefox_warning": "KelFront běží nejlépe v [prohlížečích založených na Chromiu](https://en.wikipedia.org/wiki/Chromium_(web_browser)#Browsers_based_on_Chromium). Výkon může být horší v [prohlížečích založených na Firefoxu](https://simple.wikipedia.org/wiki/Web_browsers_based_on_Firefox).",
     "go_to_item": "Přejít na položku {num}",
     "news": "NOVINKY",
     "tournament": "TURNAJ",
@@ -1591,9 +1591,9 @@
     "waiting_for_players": "Čeká se na hráče"
   },
   "purchase_nudge": {
-    "body": "Vypadá to, že vás OpenFront baví! Zvažte prosím, zda nás nepodpořit nákupem — jakýkoli nákup vám zajistí hraní bez reklam navždy.",
+    "body": "Vypadá to, že vás KelFront baví! Zvažte prosím, zda nás nepodpořit nákupem — jakýkoli nákup vám zajistí hraní bez reklam navždy.",
     "close": "Zavřít",
-    "title": "Baví vás OpenFront?",
+    "title": "Baví vás KelFront?",
     "visit_store": "Navštívit obchod"
   },
   "radial_menu": {
@@ -1656,7 +1656,7 @@
     "reason_expired": "Platnost tohoto odkazu vypršela. Zkuste propojení znovu spustit ze Steamu.",
     "reason_rate_limited": "Příliš mnoho pokusů. Počkejte {seconds, plural, =0 {chvíli} one {# sekundu} few {# sekundy} other {# sekund}} a zkuste to znovu.",
     "reason_steam_has_progress": "Tento účet Steam již obsahuje vlastní postup ve hře a nelze ho sloučit.",
-    "reason_steam_linked_elsewhere": "Tento účet Steam je již propojen s jiným účtem OpenFront.",
+    "reason_steam_linked_elsewhere": "Tento účet Steam je již propojen s jiným účtem KelFront.",
     "success": "Váš účet Steam je nyní propojen.",
     "title": "Propojit účet Steam"
   },
@@ -1666,9 +1666,9 @@
   },
   "steam_wishlist": {
     "cta": "Přidat do seznamu přání",
-    "on_steam": "OpenFront na Steamu",
+    "on_steam": "KelFront na Steamu",
     "release": "Dostupné ve 3. čtvrtletí 2026",
-    "title": "Přidejte si OpenFront do seznamu přání na Steamu!"
+    "title": "Přidejte si KelFront do seznamu přání na Steamu!"
   },
   "store": {
     "already_subscribed": "Předplatné už máte aktivní.",
@@ -1756,7 +1756,7 @@
     "tribes_purchase_heading": "Koupit jméno kmene",
     "your_tribes_heading": "Vaše jména kmenů",
     "merch": "Merch",
-    "merch_blurb": "Nechte si merch OpenFront doručit až domů!",
+    "merch_blurb": "Nechte si merch KelFront doručit až domů!",
     "merch_visit_store": "Navštívit obchod"
   },
   "streaming_now": {
@@ -1798,7 +1798,7 @@
     "browser": "Prohlížeč",
     "canvas_2d_no_gpu": "Canvas 2D (bez GPU)",
     "charging": "Nabíjení",
-    "chromium_tip": "OpenFront běží nejlépe v prohlížečích založených na Chromiu.",
+    "chromium_tip": "KelFront běží nejlépe v prohlížečích založených na Chromiu.",
     "copied_to_clipboard": "Informace byly zkopírovány do schránky. Neváhejte nás kontaktovat na Discordu, pokud potřebujete pomoct.",
     "device_pixel_ratio": "Poměr pixelů zařízení",
     "environment": "Prostředí",
@@ -2016,7 +2016,7 @@
     "other_won": "{player} vítězí!",
     "requeue": "Hrát znovu",
     "spectate": "Sledovat",
-    "support_openfront": "Podpořte OpenFront!",
+    "support_openfront": "Podpořte KelFront!",
     "territory_pattern": "Kupte si vzor území a hrajte bez reklam!",
     "you_won": "Vítězství!",
     "your_team": "Váš tým vyhrál!",

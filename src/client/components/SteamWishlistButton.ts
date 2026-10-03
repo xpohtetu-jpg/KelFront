@@ -3,7 +3,7 @@ import { customElement, property } from "lit/decorators.js";
 import { assetUrl } from "../../core/AssetUrls";
 import { steamSDK } from "../SteamSDK";
 import { translateText } from "../Utils";
-import { steamStoreUrl } from "./SteamWishlist";
+import { hasSteamListing, steamStoreUrl } from "./SteamWishlist";
 
 /**
  * Wide, short promo strip linking to the Steam store page, for slots too short
@@ -27,7 +27,7 @@ export class SteamWishlistButton extends LitElement {
   }
 
   render() {
-    if (steamSDK.isOnSteam()) return nothing;
+    if (!hasSteamListing() || steamSDK.isOnSteam()) return nothing;
 
     return html`
       <a
@@ -37,7 +37,7 @@ export class SteamWishlistButton extends LitElement {
         class="group flex w-full items-center justify-center gap-3 rounded border-t border-l border-[#424c5c] bg-[linear-gradient(130deg,#3b4351,#282e39)] px-3 py-2 shadow-md transition-shadow hover:shadow-lg xl:justify-start"
       >
         <img
-          src=${assetUrl("images/OpenFrontLogo.svg")}
+          src=${assetUrl("images/KelFrontLogo.svg")}
           alt=""
           class="hidden h-7 w-auto max-w-[120px] shrink-0 object-contain pointer-events-none min-[1600px]:block"
           draggable="false"

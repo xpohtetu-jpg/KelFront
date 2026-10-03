@@ -57,9 +57,9 @@ export class DesktopNavBar extends LitElement {
         <div class="flex flex-col items-center justify-center">
           <div class="h-8">
             <img
-              class="block h-full aspect-[1364/259]"
-              src=${assetUrl("images/OpenFrontLogo.svg")}
-              alt="OpenFront"
+              class="block h-full aspect-[1270/240]"
+              src=${assetUrl("images/KelFrontLogo.svg")}
+              alt="KelFront"
             />
           </div>
           <div
