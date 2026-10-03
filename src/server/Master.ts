@@ -26,6 +26,7 @@ import { setNoStoreHeaders } from "./NoStoreHeaders";
 import { startPolling } from "./PollingLoop";
 import { renderAppShell } from "./RenderHtml";
 import { ServerEnv } from "./ServerEnv";
+import { installStandaloneProxy } from "./StandaloneProxy";
 import { applyStaticAssetCacheControl } from "./StaticAssetCache";
 
 const playlist = new MapPlaylist();
@@ -33,6 +34,9 @@ let lobbyService: MasterLobbyService;
 
 const app = express();
 const server = http.createServer(app);
+
+// Before express.json(), which would consume bodies meant for workers.
+installStandaloneProxy(app, server);
 
 const log = logger.child({ comp: "m" });
 

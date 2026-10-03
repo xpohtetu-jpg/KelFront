@@ -142,6 +142,15 @@ export function multiplayerAllowedForBackend(backendOutage: boolean): boolean {
  * "reachability does not apply here" is a named decision rather than a
  * `false` literal someone has to interpret.
  */
+/**
+ * KelFront: a page its own game server rendered already knows where to create
+ * and join games, so it never needs the list API for them. KelFront runs no
+ * API at all, so an "outage" there must not lock Create/Join on such a page.
+ */
+export function blocksOnListApiOutage(outageConfirmed: boolean): boolean {
+  return outageConfirmed && !ClientEnv.servedByGameServer();
+}
+
 export function shouldBlockMultiplayerAction(
   update: DesktopUpdateState | null,
   session: DesktopSessionState | null,
@@ -428,7 +437,7 @@ export class GameModeSelector extends LitElement {
     // unreachable on the web, and the heartbeat's first attempts often settle
     // before this element exists (it is started in Main's initialize, we are
     // rendered by <play-page> later), so the event alone would miss them.
-    this.backendOutage = backendUnreachableConfirmed();
+    this.backendOutage = blocksOnListApiOutage(backendUnreachableConfirmed());
     document.addEventListener(
       "backend-reachability",
       this.onBackendReachability,
@@ -518,9 +527,9 @@ export class GameModeSelector extends LitElement {
   };
 
   private onBackendReachability = (e: Event) => {
-    this.backendOutage = (
-      e as CustomEvent<BackendReachabilityDetail>
-    ).detail.confirmed;
+    this.backendOutage = blocksOnListApiOutage(
+      (e as CustomEvent<BackendReachabilityDetail>).detail.confirmed,
+    );
   };
 
   public stop() {

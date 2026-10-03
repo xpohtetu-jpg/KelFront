@@ -1,0 +1,24 @@
+# Render Blueprint: hosts KelFront as one free web service.
+# Deploy: https://render.com/deploy?repo=https://github.com/xpohtetu-jpg/KelFront
+#
+# Runs scripts/startStandalone.mjs (production mode, guest players, no account
+# API). One worker keeps it inside the free plan's 512 MB.
+services:
+  - type: web
+    name: kelfront
+    runtime: node
+    plan: free
+    # vite build alone: the type check in build-prod is the slowest, hungriest
+    # step and adds nothing to a deploy.
+    buildCommand: >-
+      npm ci --ignore-scripts --include=dev --engine-strict=false &&
+      npx vite build &&
+      npx tsx scripts/buildAssetHashes.ts
+    startCommand: node scripts/startStandalone.mjs
+    healthCheckPath: /api/health
+    envVars:
+      - key: NODE_VERSION
+        value: "24"
+      # The master listens on 3000; tell Render to route there.
+      - key: PORT
+        value: "3000"

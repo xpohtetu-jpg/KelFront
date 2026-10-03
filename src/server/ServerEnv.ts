@@ -59,6 +59,14 @@ export class ServerEnv {
     }
     return n;
   }
+  // Whether players may join with a bare persistent ID instead of an
+  // API-signed JWT. Always in dev. ALLOW_GUESTS=true enables it elsewhere,
+  // for deployments with no account API (where guests are the only players).
+  static allowGuests(): boolean {
+    return (
+      ServerEnv.gameEnv === GameEnv.Dev || process.env.ALLOW_GUESTS === "true"
+    );
+  }
   static turnstileSiteKey(): string {
     const v = process.env.TURNSTILE_SITE_KEY;
     if (!v) {

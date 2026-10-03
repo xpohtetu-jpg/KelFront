@@ -17,6 +17,29 @@ KelFront is an online real-time strategy game focused on territorial control and
 - OpenFront's ad, analytics, and Apple Pay account bindings, its press kit, and its Terms/Privacy documents are removed.
 - The account/stats/cosmetics API is closed-source and not part of this repo, so login, stats, and the store are unavailable unless you run your own API.
 
+## Play with friends
+
+### Online, always available (free)
+
+[![Deploy to Render](https://render.com/images/deploy-to-render-button.svg)](https://render.com/deploy?repo=https://github.com/xpohtetu-jpg/KelFront)
+
+1. Click the button above and sign in to Render with GitHub.
+2. Click **Apply**. The first build takes a few minutes.
+3. Share the `https://kelfront-….onrender.com` address with your friends.
+
+Then **Create Lobby** and send friends the invite link, or join a public lobby together. Everyone plays as a guest; no accounts needed.
+
+On Render's free plan the server sleeps after 15 minutes with nobody connected, so the first visit after a break takes about a minute to load.
+
+### From your own computer
+
+```bash
+npm run inst # once
+npm run host # builds, then serves the game on http://localhost:3000
+```
+
+Friends on the same network can open `http://<your-computer's-IP>:3000`. To reach friends elsewhere, put a tunnel in front of port 3000 (for example `cloudflared tunnel --url http://localhost:3000`) and share the address it prints.
+
 [![License: AGPL v3](https://img.shields.io/badge/License-AGPL%20v3-blue.svg)](https://www.gnu.org/licenses/agpl-3.0)
 [![Assets: CC BY-SA 4.0](https://img.shields.io/badge/Assets-CC%20BY--SA%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by-sa/4.0/)
 
