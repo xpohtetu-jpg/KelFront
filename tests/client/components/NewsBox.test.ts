@@ -117,9 +117,11 @@ describe("NewsBox", () => {
       expect(new Set(ids).size).toBe(ids.length);
     });
 
-    it("contains a tournament entry", () => {
+    // KelFront dropped OpenFront's tournament announcements, so this checks
+    // only that the feed has something to show.
+    it("has at least one visible entry", () => {
       const items = getVisibleNewsItems(allItems);
-      expect(items.some((i) => i.type === "tournament")).toBe(true);
+      expect(items.length).toBeGreaterThan(0);
     });
   });
 });
