@@ -4,7 +4,7 @@
  * change, then the new frames as they're processed.
  */
 
-import { getCdnBase } from "../../core/AssetUrls";
+import { getWorkerCdnBase } from "../../core/AssetUrls";
 import type { GameRecord } from "../../core/Schemas";
 import type { ReplayAppend, ReplayBase } from "./codec/ReplayTypes";
 import type { ProcessorRequest, ProcessorResponse } from "./ProcessorMessages";
@@ -87,7 +87,7 @@ export function processInBrowser(
         stop();
         handlers.onError(e.message || "the replay worker failed", false);
       });
-      const request: ProcessorRequest = { record, cdnBase: getCdnBase() };
+      const request: ProcessorRequest = { record, cdnBase: getWorkerCdnBase() };
       w.postMessage(request);
     },
     (err: unknown) => {

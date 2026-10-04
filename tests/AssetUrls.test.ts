@@ -1,5 +1,9 @@
-import { describe, expect, test } from "vitest";
-import { buildAssetUrl, rewriteAssetsForCdn } from "../src/core/AssetUrls";
+import { afterEach, describe, expect, test } from "vitest";
+import {
+  buildAssetUrl,
+  getWorkerCdnBase,
+  rewriteAssetsForCdn,
+} from "../src/core/AssetUrls";
 
 describe("AssetUrls", () => {
   test("returns hashed URLs for direct asset matches", () => {
@@ -160,5 +164,33 @@ describe("rewriteAssetsForCdn", () => {
   test("does not match data-src or other custom attributes", () => {
     const html = `<img data-src="/assets/foo.png">`;
     expect(rewriteAssetsForCdn(html)).toBe(html);
+  });
+});
+
+// Workers start from blob: URLs and cannot resolve root-relative asset URLs,
+// so a page with no CDN must hand them its own origin (else the game hangs
+// on "Game is Starting..." because the worker's map fetch throws).
+describe("getWorkerCdnBase", () => {
+  const original = window.BOOTSTRAP_CONFIG;
+  afterEach(() => {
+    window.BOOTSTRAP_CONFIG = original;
+  });
+
+  const setCdnBase = (cdnBase: string) => {
+    window.BOOTSTRAP_CONFIG = {
+      ...(original ?? {}),
+      cdnBase,
+    } as typeof window.BOOTSTRAP_CONFIG;
+  };
+
+  test("passes a configured CDN base through unchanged", () => {
+    setCdnBase("https://cdn.example.com");
+    expect(getWorkerCdnBase()).toBe("https://cdn.example.com");
+  });
+
+  test("falls back to the page origin when assets are same-origin", () => {
+    setCdnBase("");
+    expect(getWorkerCdnBase()).toBe(window.location.origin);
+    expect(getWorkerCdnBase()).toMatch(/^https?:\/\//);
   });
 });

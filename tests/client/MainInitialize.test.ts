@@ -77,12 +77,6 @@ vi.mock("../../src/client/BootInterrupts", () => ({
   runBootInterrupt: async () => {},
 }));
 
-// Injects a third-party script and polls; nothing under test needs it.
-vi.mock("../../src/client/Admiral", () => ({
-  loadAdmiral: vi.fn(),
-  onAdmiralMeasured: vi.fn(),
-}));
-
 // adGatekeeper.start() would install a poll interval and DOM bait.
 // HomepagePromos (also in Main's graph) reads canShowAds and nothing else.
 vi.mock("../../src/client/AdGatekeeper", () => ({

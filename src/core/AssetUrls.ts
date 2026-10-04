@@ -104,6 +104,17 @@ export function getCdnBase(): string {
   return globalThis.__CDN_BASE__ ?? "";
 }
 
+// The CDN base to hand a web worker. Workers are started from blob: URLs
+// (Vite's `?worker&inline`), which cannot resolve root-relative URLs like
+// "/_assets/maps/...", so with no CDN (same-origin assets, as on a standalone
+// KelFront server) give them this page's origin instead of "". Without it the
+// worker's map fetch throws and the game hangs on "Game is Starting...".
+export function getWorkerCdnBase(): string {
+  const base = getCdnBase();
+  if (base !== "") return base;
+  return typeof location !== "undefined" ? location.origin : "";
+}
+
 export function assetUrl(path: string): string {
   return buildAssetUrl(path, getAssetManifest(), getCdnBase());
 }
