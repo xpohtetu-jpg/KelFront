@@ -245,7 +245,9 @@ export async function startMaster() {
     );
   });
 
-  const PORT = 3000;
+  // MASTER_PORT is set by scripts/startStandalone.mjs (from the host's PORT).
+  // nginx deployments leave it unset and proxy to 3000.
+  const PORT = Number(process.env.MASTER_PORT) || 3000;
   server.listen(PORT, () => {
     log.info(`Master HTTP server listening on port ${PORT}`);
   });

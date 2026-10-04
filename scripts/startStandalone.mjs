@@ -2,7 +2,7 @@
 // players, no account API, no nginx (see src/server/StandaloneProxy.ts).
 //
 //   npm run host              build, then start on http://localhost:3000
-//   npm run start:standalone  start an existing build
+//   npm start                 start an existing build (Render's default)
 //
 // Any variable already set in the environment wins over these defaults, so a
 // host (Render, see render.yaml) can override them.
@@ -37,6 +37,8 @@ const defaults = {
   TURNSTILE_SITE_KEY: "1x00000000000000000000AA",
   API_KEY: "kelfront-standalone",
   GIT_COMMIT: gitCommit(),
+  // Hosts like Render pick the port and pass it as PORT.
+  MASTER_PORT: process.env.PORT ?? "3000",
 };
 
 const env = { ...process.env };
@@ -45,7 +47,7 @@ for (const [key, value] of Object.entries(defaults)) {
 }
 
 console.log(
-  `Starting KelFront (${env.NUM_WORKERS} worker(s)) on http://localhost:3000`,
+  `Starting KelFront (${env.NUM_WORKERS} worker(s)) on port ${env.MASTER_PORT}`,
 );
 
 // `node --import tsx` rather than the tsx CLI: no extra wrapper process, and
